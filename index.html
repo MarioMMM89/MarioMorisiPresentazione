@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="sfondoRotante.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="sfondoRotante.css">
 	</head>
+
 	<body>
-		<header>
-			<div id="contenitoreIniziale">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			<div id="contenitoreHeader">
-				<a href="#"><p id="nome">
-				CHI SONO
-				</p></a>
-				<a href="#"><p id="lavori">
-				I MIEI LAVORI
-				</p></a>
-				<a href="#"><p id="contatti">
-				CONTATTI
-				</p></a>
-			</div>
-		</div>
-		</header>
+        <input type="checkbox" id="offcanvas-menu" class="toggle" />
+        <div class="container">
+            <aside class="menu-container">
+                <div class="menu-heading">
+                  <label for="offcanvas-menu" class="close-btn"><img src="icona-chiusura.png" alt="chiudi" id="close-img"></label>
+                </div>
+   
+              <nav class="slide-menu">
+                  <ul>
+                      <li><a href="#">Chi sono</a></li>
+                      <li><a href="#">I miei lavori</a></li>
+                      <li><a href="#">Contatti</a></li>
+                  </ul>
+              </nav>
+
+          </aside>
+
+          <label for="offcanvas-menu" class="full-screen-close"></label>
+ 
 		<div id="contenitore">
-			<img src="primoLogoMarioBiancoConNome.png">
-			<div id="rosso"></div>
-			<div id="nero"></div>
+            <span id="tap">Tap to start</span>
+            <img src="primoLogoMarioBiancoConNome.png">
+			<div id="cerchio1"></div>
+			<div id="cerchio2"></div>
 			<div id="esterno"></div>
-			<div id="esterno2"></div>
+			<label for="offcanvas-menu" class="label-principale"><div id="esterno2"></div></label>
 		</div>
-	</div>
 	</body>
 </html>
